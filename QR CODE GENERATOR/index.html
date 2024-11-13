@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sample QR Code Generator | Code Traversal</title>
+</head>
+<body>
+    <div class="box">
+        <div class="qr-header">
+            <h1> QR Code Generator App</h1>
+            <input type="text" placeholder="Enter your text or anly link" id="qr-text">
+            <div>
+            <label for="sizes">Select Image Size:</label>
+            <select id="sizes">
+                <option value="150">150x150</option>
+                <option value="250">250x250</option>
+                <option value="350">350x350</option>
+                <option value="450">450x450</option>
+                <option value="550">550x550</option>
+                <option value="650">650x650</option>
+                <option value="750">750x750</option>
+                <option value="850">850x850</option>
+                <option value="900">900x900</option>
+                <option value="1000">1000x1000</option>
+            </select>
+        </div>
+        </div>
+        <div class="qr-body"></div>
+        <div class="qr-footer">
+            <a href="" id="generateBtn">Generate QR Code</a>
+            <a href="" id="downloadBtn" download="QR_Code.png">Download QR Code</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
